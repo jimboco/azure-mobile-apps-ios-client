@@ -189,7 +189,7 @@
 #pragma mark * Public Authentication Methods
 
 
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE && !(TARGET_OS_WATCH)
 -(void) loginWithProvider:(NSString *)provider
              controller:(UIViewController *)controller
                  animated:(BOOL)animated
