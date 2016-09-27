@@ -35,7 +35,7 @@
 
 #pragma  mark * Public Login Methods
 
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE && !(TARGET_OS_WATCH)
 // Logs in the current end user with the given provider by presenting the
 // MSLoginController with the given |controller|.
 -(void)loginWithProvider:(NSString *)provider
