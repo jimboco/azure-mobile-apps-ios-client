@@ -50,7 +50,7 @@
 
 #pragma  mark * Public Login Methods
 
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE && !(TARGET_OS_WATCH)
 -(void) loginWithProvider:(NSString *)provider
                parameters:(nonnull NSDictionary *)parameters
                controller:(UIViewController *)controller
