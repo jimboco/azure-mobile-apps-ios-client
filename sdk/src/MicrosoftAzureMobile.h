@@ -11,7 +11,7 @@
 #import "MSDateOffset.h"
 #import "MSError.h"
 #import "MSFilter.h"
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE && !(TARGET_OS_WATCH)
 #import "MSLoginController.h"
 #endif
 #import "MSManagedObjectObserver.h"
