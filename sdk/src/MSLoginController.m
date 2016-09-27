@@ -2,6 +2,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // ----------------------------------------------------------------------------
 
+#if !(TARGET_OS_WATCH)
+
 #import "MSLoginController.h"
 #import "MSLoginView.h"
 #import "MSLoginSerializer.h"
@@ -355,3 +357,5 @@
 }
 
 @end
+
+#endif

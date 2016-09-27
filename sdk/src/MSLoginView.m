@@ -2,6 +2,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // ----------------------------------------------------------------------------
 
+#if !(TARGET_OS_WATCH)
+
 #import "MSLoginView.h"
 #import "MSClientConnection.h"
 #import "MSClient.h"
@@ -282,3 +284,5 @@ NSString *const MSLoginViewErrorResponseData = @"com.Microsoft.MicrosoftAzureMob
 }
 
 @end
+
+#endif

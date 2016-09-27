@@ -2,6 +2,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // ----------------------------------------------------------------------------
 
+#if !(TARGET_OS_WATCH)
+
 #import <UIKit/UIKit.h>
 
 @class MSClient;
@@ -96,3 +98,5 @@ typedef void (^MSLoginViewBlock)(NSURL *endURL, NSError *error);
         completion:(MSLoginViewBlock)completion;
 
 @end
+
+#endif

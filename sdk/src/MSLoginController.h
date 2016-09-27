@@ -2,6 +2,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // ----------------------------------------------------------------------------
 
+#if !(TARGET_OS_WATCH)
+
 #import <UIKit/UIKit.h>
 #import "MSBlockDefinitions.h"
 
@@ -76,5 +78,6 @@
 
 ///@}
 
-
 @end
+
+#endif
